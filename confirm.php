@@ -11,7 +11,8 @@ require_once 'core/init.php';
 			case 1:
 				Sesstion::flash('success','<div class="alert alert-success" role="alert"style="width: 50%;  margin: 20px auto;">
                                               Confirm Email Success <span class="alert-link">LogIn Now</span>
-                                            </div>');
+																						</div>');
+																						
                                     
                 Redirect::to('login.php');
 				break;
