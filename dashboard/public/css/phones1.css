@@ -1,0 +1,248 @@
+
+@media print {
+  .navbar,.footer,.input-group,.export-btn {
+    display: none;
+  }
+
+  #all-data {
+    display: block;
+
+  }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a:hover{
+    text-decoration:none;
+    
+}
+
+
+/* home */
+
+.search-btn{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.31);
+    color: #f8ce24;
+    font-size: 16px;
+    border-color: #43aee2;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+        margin-top: 12px;
+}
+
+.search-btn:hover{
+        background-color: #f7cd2270;
+    color: #fff;
+}
+
+
+.all-contact{
+        padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.have-account{
+    
+        margin-top: 12px;
+    color: #fff;
+    font-size: 16px;
+    
+}
+
+.have-account span a{
+    color: #f9cf26;
+}
+
+
+.export-btn{
+    text-align: center;
+        margin-bottom: 12px;
+}
+
+.export-btn form{
+    display: inline;
+    
+}
+
+.export-btn button{
+    color: #fff;
+}
+
+.export-btn #create-pdf{
+    background-color: #e73e33;
+    
+}
+
+.export-btn #create-excel{
+    background-color: #1c6c40;
+
+}
+
+.export-btn #print-btn{
+    background-color: #1c87e4;
+}
+
+
+/* add contact page */
+
+.addContact_section, #user-profile{
+    margin: 100px 0;
+}
+
+.pagination{
+    display: inline-block !important; 
+}
+.pagination li{
+    float: left;
+}
+
+.contact-user{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+
+.contact-info-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/*footer*/
+
+.footer{
+   height: 50px; 
+     background-color: #48b2e6;
+    border-top: 2px solid  #f9cf26;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.footer p{
+       text-align: center;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 10px 0px;
+    
+}
+
+.footer p a{
+
+    color: #fff;
+}
+.footer p a:hover{
+
+    color: #f1dd8f;
+}
+      
+
+
+
+
+/*loader*/
+
+
+.loader{
+                position: relative;
+                right: 0;
+                margin: 0 auto;
+            }
+            #loader {
+                display: block;
+                width: 150px;
+                height: 150px;   
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: #1c6c40;
+                -webkit-animation: spin 5s linear infinite;
+                animation: spin 5s linear infinite;
+            }
+            #loader:before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: #e73e33;
+                -webkit-animation: spin 6s linear infinite;
+                animation: spin 6s linear infinite;
+            }
+            #loader:after {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-top-color: #1c87e4;
+                -webkit-animation: spin 4s linear infinite;
+                animation: spin 4s linear infinite;
+            }
+            @-webkit-keyframes spin {
+                0%   {
+                    -webkit-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes spin {
+                0%   {
+                    -webkit-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+/* modal */
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+
+@media (min-width: 1020px){
+    .modal-dialog {
+        max-width: 900px;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (min-width: 740px){
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}
+
+
+.add-input{
+        float: left;
+        margin-bottom: 10px;
+}
+
+.add-input label{
+        color: #48b2e6;
+    font-size: 16px;
+    
+}
